@@ -1,0 +1,94 @@
+<!DOCTYPE HTML>
+<!--
+	Solid State by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Herding Behaviour</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Return to Home</a></h1>
+
+					</header>
+
+				<!-- Menu -->
+
+
+				<!-- Wrapper -->
+					<section id="wrapper">
+						<header>
+							<div class="inner">
+								<h2>Herding behaviour using state machines</h2>
+								<p>C#</p>
+							</div>
+
+						</header>
+
+						<!-- Content -->
+							<div class="wrapper">
+								<div class="inner">
+									<section>
+										<h3 class="major"></h3>
+										<div class="box alt">
+											<div class="row gtr-uniform">
+											<!--	<div class="col-12"><span class="image fit"><img src="images/pic08.jpg" alt="" /></span></div> -->
+
+											</div>
+											<video width = 100% height= 100% controls>
+												<source src="images/herding.mp4" type="video/mp4">
+											</video>
+										</div>
+									</section>
+
+									<h3 class="major">Project Summary</h3>
+									<p>This project is my first attempt at using the state machine pattern. I decided to implement this by creating a herding mechanic for a "sheep" object, that simultaneously implements both fleeing and roaming behaviours, controlled by a state machine.<br>This work was a solo project, however I still aimed to keep my code modular, and continued to implement good programming practices, including interfaces and abstract classes.</p>
+									<p>This work was completed as part of my second-year gameplay programming module. A demo of this project can be found <a href="Herding/index.html" target="_blank">here.</a></p>
+									
+									
+									<h3 class="major"></h3>
+									<p><br></p>
+									<div class="row gtr-uniform">
+										<p><span class="image left"><a href="images/Abstract.png" target="_blank"><img src="images/Abstract.png"></a></span>Building a state machine was my first attempt at using abstract classes and enforcing good programming techniques, such as the use of Interfaces for easier class implementation. <br> 
+										I could also implement a method for avoiding the boundaries of the arena, that would be applied before each movement call as I often had issues with my sheep being stuck at the walls during testing.<br>Each of my states would then be implemented as new classes, that would inherit from my state abstract class. I could then switch between states and the required methods within my State Machine script.</p>
+									</div>
+									<h4 class="major"></h4>
+									<div class="row gtr-uniform">
+										<p><span class="image right"><a href="images/HerdingBehavior.png" target="_blank"><img src="images/HerdingBehavior.png"></a></span>Implementing the herding behaviour was initially more challenging as I needed it to apply simultaneously with the fleeing and roaming states.<br>Eventually, I figured out a solution that had the Herding behaviour apply as an offset to the agent's target position, which would be added just before the movement was applied.</p>
+									</div>
+									
+									
+			
+
+
+								</div>
+							</div>
+
+					</section>
+
+				<!-- Footer -->
+
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
